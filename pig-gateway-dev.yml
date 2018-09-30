@@ -13,7 +13,7 @@ zuul:
   ribbon:
     eager-load:
       enabled: true
-      clients: pig-auth,pig-upms-service,pig-demo-service,pig-provider
+      clients: pig-auth,pig-upms-service,pig-demo-service,pig-instructions-service,pig-provider
   ignoredServices: '*'
   host:
     connect-timeout-millis: 10000
@@ -58,5 +58,6 @@ ignore:
     - /swagger/api-docs
     - /webjars/**
     - /provider/**
+    - /instructions/**
   clients:
     - app
